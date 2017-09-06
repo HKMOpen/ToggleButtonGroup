@@ -1,16 +1,19 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion project.ANDROID_BUILD_SDK_VERSION as int
+    buildToolsVersion project.ANDROID_BUILD_TOOLS_VERSION
+
     defaultConfig {
-        applicationId "com.nex3z.togglebuttongroup.sample"
-        minSdkVersion 15
-        targetSdkVersion 25
+        minSdkVersion project.ANDROID_BUILD_MIN_SDK_VERSION
+        targetSdkVersion project.ANDROID_BUILD_TARGET_SDK_VERSION
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        applicationId "com.nex3z.togglebuttongroup.sample"
     }
+
+
     buildTypes {
         release {
             minifyEnabled false
@@ -25,6 +28,6 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile project(path: ':togglebuttongroup')
-    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile libden.appCompat
     testCompile 'junit:junit:4.12'
 }
