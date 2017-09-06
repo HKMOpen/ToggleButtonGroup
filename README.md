@@ -1,6 +1,6 @@
 # ToggleButtonGroup
 
-[![API](https://img.shields.io/badge/API-15%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=15) [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-ToggleButtonGroup-blue.svg?style=flat)](https://android-arsenal.com/details/1/4885)
+[![API](https://img.shields.io/badge/API-15%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=15) [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-ToggleButtonGroup-blue.svg?style=flat)](https://android-arsenal.com/details/1/4885) [ ![Download](https://api.bintray.com/packages/jjhesk/maven/toggle-button-group/images/download.svg) ](https://bintray.com/jjhesk/maven/toggle-button-group/_latestVersion)
 
 A container of toggle buttons, supports multiple / single selection and button customization.
 
