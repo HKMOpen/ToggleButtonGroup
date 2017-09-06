@@ -1,4 +1,4 @@
-package com.nex3z.togglebuttongroup.button;
+package com.nex3z.togglebuttongroup.preset;
 
 import android.animation.ArgbEvaluator;
 import android.animation.ValueAnimator;
@@ -10,6 +10,7 @@ import android.view.animation.Animation;
 import android.view.animation.ScaleAnimation;
 
 import com.nex3z.togglebuttongroup.R;
+import com.nex3z.togglebuttongroup.button.MarkerButton;
 
 public class CircularToggle extends MarkerButton {
     private static final String LOG_TAG = CircularToggle.class.getSimpleName();

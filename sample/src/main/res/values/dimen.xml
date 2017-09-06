@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="sep_height">50dp</dimen>
+    <dimen name="divider_stroke_width">1dp</dimen>
+    <dimen name="scroll_picker_height">48dp</dimen>
+    <dimen name="gap_lv1">2dp</dimen>
+    <dimen name="gap_lv1a">5dp</dimen>
+    <dimen name="gap_icon_to_text">2dp</dimen>
+    <dimen name="gap_lv2">10dp</dimen>
+    <dimen name="gap_lv2a">15dp</dimen>
+    <dimen name="gap_lv3">20dp</dimen>
+    <dimen name="gap_lv4">50dp</dimen>
+    <dimen name="text_icon_padding">50dp</dimen>
+    <dimen name="text_icon_padding_x">60dp</dimen>
+
+    <dimen name="post_grid_item_height">220dp</dimen>
+    <dimen name="post_grid_item_simple_height">190dp</dimen>
+    <dimen name="post_grid_item_stack_height">170dp</dimen>
+
+    <dimen name="mv_extra_detail_icon">60dp</dimen>
+    <dimen name="mv_extra_detail_label">150dp</dimen>
+    <dimen name="mv_extra_detail_desc">150dp</dimen>
+    <dimen name="mv_accounting_ledger_v1">90dp</dimen>
+    <dimen name="mv_accounting_ledger_v2">120dp</dimen>
+    <dimen name="login_button_height">50dp</dimen>
+    <dimen name="login_panel_width">250dp</dimen>
+
+    <!--the font sizes-->
+    <dimen name="tag_seat_plan_id">30sp</dimen>
+    <dimen name="tag_home_title">20sp</dimen>
+    <dimen name="tag_size">19sp</dimen>
+    <dimen name="tag_size_m1">18sp</dimen>
+    <dimen name="tag_size_m2">17sp</dimen>
+    <dimen name="tag_size_m3">16sp</dimen>
+    <dimen name="tag_size_m5">15sp</dimen>
+    <dimen name="tag_size_m6">13sp</dimen>
+    <dimen name="tag_size_tiny">12sp</dimen>
+    <dimen name="tag_size_tt">10sp</dimen>
+    <dimen name="tag_size_pt">7sp</dimen>
+
+</resources>

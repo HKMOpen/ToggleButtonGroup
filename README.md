@@ -29,13 +29,13 @@ You can create a group of single-select toggle buttons with `SingleSelectToggleG
     android:layout_height="wrap_content"
     app:tbgCheckedButton="@+id/choice_a">
 
-    <com.nex3z.togglebuttongroup.button.CircularToggle
+    <com.nex3z.togglebuttongroup.preset.CircularToggle
         android:id="@+id/choice_a"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="A"/>
 
-    <com.nex3z.togglebuttongroup.button.CircularToggle
+    <com.nex3z.togglebuttongroup.preset.CircularToggle
         android:id="@+id/choice_b"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -62,13 +62,13 @@ You can create a group of multi-select toggle buttons with `MultiSelectToggleGro
     android:layout_height="wrap_content"
     app:tbgChildSpacing="auto">
 
-    <com.nex3z.togglebuttongroup.button.CircularToggle
+    <com.nex3z.togglebuttongroup.preset.CircularToggle
         android:id="@+id/sun"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="S"/>
 
-    <com.nex3z.togglebuttongroup.button.CircularToggle
+    <com.nex3z.togglebuttongroup.preset.CircularToggle
         android:id="@+id/mon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

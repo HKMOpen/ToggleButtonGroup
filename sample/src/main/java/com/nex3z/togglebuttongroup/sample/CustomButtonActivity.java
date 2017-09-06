@@ -30,6 +30,10 @@ public class CustomButtonActivity extends AppCompatActivity {
                 (MultiSelectToggleGroup) findViewById(R.id.group_multi_custom_togglebutton);
         multiCustomToggleButton.setOnCheckedChangeListener(new MultiSelectListener());
 
+        MultiSelectToggleGroup mgroup_image_button =
+                (MultiSelectToggleGroup) findViewById(R.id.group_image_button);
+        mgroup_image_button.setOnCheckedChangeListener(new MultiSelectListener());
+
         SingleSelectToggleGroup singleCompoundToggleButton =
                 (SingleSelectToggleGroup) findViewById(R.id.group_single_custom_compoundtogglebutton);
         singleCompoundToggleButton.setOnCheckedChangeListener(new SingleSelectListener());

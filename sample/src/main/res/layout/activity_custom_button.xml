@@ -1,186 +1,332 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="8dp"
     tools:context="com.nex3z.togglebuttongroup.sample.CustomButtonActivity">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:text="SingleSelectToggleGroup with RadioButton"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
 
-    <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
-        android:id="@+id/group_single_radiobutton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        app:tbgChildSpacing="8dp">
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:gravity="center"
-            android:button="@null"
-            android:background="@drawable/selector_bg_radio_button"
-            android:textColor="@color/selector_text_radio_button"
-            android:text="lorem"/>
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:gravity="center"
-            android:button="@null"
-            android:background="@drawable/selector_bg_radio_button"
-            android:textColor="@color/selector_text_radio_button"
-            android:text="ipsum"/>
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:gravity="center"
-            android:button="@null"
-            android:background="@drawable/selector_bg_radio_button"
-            android:textColor="@color/selector_text_radio_button"
-            android:text="dolor"/>
-
-    </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:text="MultiSelectToggleGroup with CustomCompoundButton extending CompoundButton"/>
-
-    <com.nex3z.togglebuttongroup.MultiSelectToggleGroup
-        android:id="@+id/group_multi_custom_compoundbutton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        app:tbgChildSpacing="8dp">
-
-        <com.nex3z.togglebuttongroup.sample.button.CustomCompoundButton
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:text="lorem"/>
-
-        <com.nex3z.togglebuttongroup.sample.button.CustomCompoundButton
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:text="ipsum"/>
-
-        <com.nex3z.togglebuttongroup.sample.button.CustomCompoundButton
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:text="dolor"/>
-
-    </com.nex3z.togglebuttongroup.MultiSelectToggleGroup>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="8dp"
-        android:text="MultiSelectToggleGroup with CustomToggleButton implementing ToggleButton"/>
-
-    <com.nex3z.togglebuttongroup.MultiSelectToggleGroup
-        android:id="@+id/group_multi_custom_togglebutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        app:tbgChildSpacing="8dp">
-
-        <com.nex3z.togglebuttongroup.sample.button.CustomToggleButton
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:gravity="center"
-            android:background="@drawable/selector_bg_radio_button"
-            android:textColor="@color/selector_text_radio_button"
-            android:text="lorem"/>
-
-        <com.nex3z.togglebuttongroup.sample.button.CustomToggleButton
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:gravity="center"
-            android:background="@drawable/selector_bg_radio_button"
-            android:textColor="@color/selector_text_radio_button"
-            android:text="ipsum"/>
-
-        <com.nex3z.togglebuttongroup.sample.button.CustomToggleButton
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:gravity="center"
-            android:background="@drawable/selector_bg_radio_button"
-            android:textColor="@color/selector_text_radio_button"
-            android:text="dolor"/>
-
-    </com.nex3z.togglebuttongroup.MultiSelectToggleGroup>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="8dp"
-        android:text="SingleSelectToggleGroup with CustomCompoundToggleButton extending CompoundToggleButton"/>
-
-    <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
-        android:id="@+id/group_single_custom_compoundtogglebutton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:tbgChildSpacing="auto">
-
-        <com.nex3z.togglebuttongroup.sample.button.CustomCompoundToggleButton
-            android:layout_width="80dp"
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:tbgFrontImage="@drawable/card_back"
-            app:tbgBackImage="@drawable/card_a"/>
+            android:layout_marginBottom="8dp"
+            android:text="SingleSelectToggleGroup with RadioButton" />
 
-        <com.nex3z.togglebuttongroup.sample.button.CustomCompoundToggleButton
-            android:layout_width="80dp"
+        <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+            android:id="@+id/group_single_radiobutton"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:tbgFrontImage="@drawable/card_back"
-            app:tbgBackImage="@drawable/card_2"/>
+            android:padding="8dp"
+            app:tbgChildSpacing="8dp">
 
-        <com.nex3z.togglebuttongroup.sample.button.CustomCompoundToggleButton
-            android:layout_width="80dp"
+            <RadioButton
+                android:layout_width="@dimen/mv_extra_detail_desc"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_bg_radio_button"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:text="lorem"
+                android:textColor="@color/selector_text_radio_button" />
+
+            <RadioButton
+                android:layout_width="@dimen/mv_extra_detail_desc"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_bg_radio_button"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:text="ipsum"
+                android:textColor="@color/selector_text_radio_button" />
+
+            <RadioButton
+                android:layout_width="@dimen/mv_extra_detail_desc"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_bg_radio_button"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:text="dolor"
+                android:textColor="@color/selector_text_radio_button" />
+
+            <RadioButton
+                android:layout_width="@dimen/mv_extra_detail_desc"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_bg_radio_button"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:text="dolor"
+                android:textColor="@color/selector_text_radio_button" />
+
+            <RadioButton
+                android:layout_width="@dimen/mv_extra_detail_desc"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_bg_radio_button"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:text="dolor"
+                android:textColor="@color/selector_text_radio_button" />
+
+            <RadioButton
+                android:layout_width="@dimen/mv_extra_detail_desc"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_bg_radio_button"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:text="dolor"
+                android:textColor="@color/selector_text_radio_button" />
+        </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:tbgFrontImage="@drawable/card_back"
-            app:tbgBackImage="@drawable/card_3"/>
+            android:layout_marginBottom="8dp"
+            android:text="MultiSelectToggleGroup with CustomCompoundButton extending CompoundButton" />
 
-        <com.nex3z.togglebuttongroup.sample.button.CustomCompoundToggleButton
-            android:layout_width="80dp"
+        <com.nex3z.togglebuttongroup.MultiSelectToggleGroup
+            android:id="@+id/group_multi_custom_compoundbutton"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:tbgFrontImage="@drawable/card_back"
-            app:tbgBackImage="@drawable/card_4"/>
+            android:padding="8dp"
+            app:tbgChildSpacing="auto">
 
-    </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+            <com.nex3z.togglebuttongroup.sample.button.CustomCompoundButton
+                android:layout_width="@dimen/mv_extra_detail_desc"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:text="lorem" />
 
-</LinearLayout>
+            <com.nex3z.togglebuttongroup.sample.button.CustomCompoundButton
+                android:layout_width="@dimen/mv_extra_detail_desc"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:text="ipsum" />
+
+            <com.nex3z.togglebuttongroup.sample.button.CustomCompoundButton
+                android:layout_width="@dimen/mv_extra_detail_desc"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:text="dolor" />
+
+
+            <com.nex3z.togglebuttongroup.sample.button.CustomCompoundButton
+                android:layout_width="@dimen/mv_extra_detail_desc"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:text="dolor" />
+
+
+            <com.nex3z.togglebuttongroup.sample.button.CustomCompoundButton
+                android:layout_width="@dimen/mv_extra_detail_desc"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:text="dolor" />
+
+
+            <com.nex3z.togglebuttongroup.sample.button.CustomCompoundButton
+                android:layout_width="@dimen/mv_extra_detail_desc"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:text="dolor" />
+
+
+            <com.nex3z.togglebuttongroup.sample.button.CustomCompoundButton
+                android:layout_width="@dimen/mv_extra_detail_desc"
+                android:layout_height="40dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:text="dolor" />
+
+
+        </com.nex3z.togglebuttongroup.MultiSelectToggleGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="16dp"
+            android:text="MultiSelectToggleGroup with CustomToggleButton implementing ToggleButton" />
+
+        <com.nex3z.togglebuttongroup.MultiSelectToggleGroup
+            android:id="@+id/group_multi_custom_togglebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            app:tbgChildSpacing="auto">
+
+            <com.nex3z.togglebuttongroup.sample.button.CustomToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_bg_radio_button"
+                android:gravity="center"
+                android:text="lorem"
+                android:textColor="@color/selector_text_radio_button" />
+
+            <com.nex3z.togglebuttongroup.sample.button.CustomToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_bg_radio_button"
+                android:gravity="center"
+                android:text="ipsum"
+                android:textColor="@color/selector_text_radio_button" />
+
+            <com.nex3z.togglebuttongroup.sample.button.CustomToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_bg_radio_button"
+                android:gravity="center"
+                android:text="dolor"
+                android:textColor="@color/selector_text_radio_button" />
+
+        </com.nex3z.togglebuttongroup.MultiSelectToggleGroup>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Trying with the imagebutton" />
+
+        <com.nex3z.togglebuttongroup.MultiSelectToggleGroup
+            android:id="@+id/group_image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            app:tbgChildSpacing="auto">
+
+            <com.nex3z.togglebuttongroup.preset.ImageToggle
+                android:layout_width="@dimen/mv_extra_detail_desc"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_bg_radio_button"
+                android:clickable="true"
+                android:gravity="center"
+                android:src="@drawable/ic_thumb_up_black_24dp" />
+
+            <com.nex3z.togglebuttongroup.preset.ImageToggle
+                android:layout_width="@dimen/mv_extra_detail_desc"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_bg_radio_button"
+                android:clickable="true"
+                android:gravity="center"
+                android:src="@drawable/ic_thumb_up_black_24dp" />
+
+            <com.nex3z.togglebuttongroup.preset.ImageToggle
+                android:layout_width="@dimen/mv_extra_detail_desc"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_thumb_up_black_24dp"
+
+                android:gravity="center"
+                android:src="@drawable/selector_bg_radio_button" />
+
+            <com.nex3z.togglebuttongroup.preset.ImageToggle
+                android:layout_width="@dimen/mv_extra_detail_desc"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_thumb_up_black_24dp"
+
+                android:gravity="center"
+                android:src="@drawable/selector_bg_radio_button" />
+
+            <com.nex3z.togglebuttongroup.preset.ImageToggle
+                android:layout_width="@dimen/mv_extra_detail_desc"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_thumb_up_black_24dp"
+
+                android:gravity="center"
+                android:src="@drawable/selector_bg_radio_button" />
+        </com.nex3z.togglebuttongroup.MultiSelectToggleGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="16dp"
+            android:text="SingleSelectToggleGroup with CustomCompoundToggleButton extending CompoundToggleButton" />
+
+        <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+            android:id="@+id/group_single_custom_compoundtogglebutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tbgChildSpacing="auto">
+
+            <com.nex3z.togglebuttongroup.sample.button.CustomCompoundToggleButton
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                app:tbgBackImage="@drawable/card_a"
+                app:tbgFrontImage="@drawable/card_back" />
+
+            <com.nex3z.togglebuttongroup.sample.button.CustomCompoundToggleButton
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                app:tbgBackImage="@drawable/card_2"
+                app:tbgFrontImage="@drawable/card_back" />
+
+            <com.nex3z.togglebuttongroup.sample.button.CustomCompoundToggleButton
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                app:tbgBackImage="@drawable/card_3"
+                app:tbgFrontImage="@drawable/card_back" />
+
+            <com.nex3z.togglebuttongroup.sample.button.CustomCompoundToggleButton
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                app:tbgBackImage="@drawable/card_4"
+                app:tbgFrontImage="@drawable/card_back" />
+
+        </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
