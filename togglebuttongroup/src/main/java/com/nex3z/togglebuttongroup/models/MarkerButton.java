@@ -1,4 +1,4 @@
-package com.nex3z.togglebuttongroup.button;
+package com.nex3z.togglebuttongroup.models;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -17,7 +17,8 @@ public abstract class MarkerButton extends CompoundToggleButton {
     private static final String LOG_TAG = MarkerButton.class.getSimpleName();
     private static final int DEFAULT_TEXT_SIZE_SP = 14;
 
-    protected static final int[] CHECKED_STATE_SET = { android.R.attr.state_checked };
+    protected static final int[] CHECKED_STATE_SET = {android.R.attr.state_checked};
+    protected static final int[] UNCHECKED_STATE_SET = {-android.R.attr.state_checked};
 
     protected TextView mTvText;
     protected ImageView mIvBg;
@@ -44,7 +45,7 @@ public abstract class MarkerButton extends CompoundToggleButton {
             CharSequence text = a.getText(R.styleable.MarkerButton_android_text);
             mTvText.setText(text);
 
-            mTextColorStateList = a.getColorStateList(R.styleable.MarkerButton_android_textColor);
+            mTextColorStateList = a.getColorStateList(R.styleable.MarkerButton_toggleTextColor);
             if (mTextColorStateList == null) {
                 mTextColorStateList = ContextCompat.getColorStateList(context, R.color.selector_marker_text);
             }
@@ -122,6 +123,10 @@ public abstract class MarkerButton extends CompoundToggleButton {
         mIvBg.setImageDrawable(drawable);
     }
 
+    public void setCheckedStateImageDrawable(Drawable drawable) {
+        mIvBg.setImageDrawable(drawable);
+    }
+
     public Drawable getCheckedImageDrawable() {
         return mIvBg.getDrawable();
     }
@@ -134,7 +139,7 @@ public abstract class MarkerButton extends CompoundToggleButton {
         return mTextColorStateList.getColorForState(CHECKED_STATE_SET, getDefaultTextColor());
     }
 
-    protected float dpToPx(float dp){
+    protected float dpToPx(float dp) {
         return TypedValue.applyDimension(
                 TypedValue.COMPLEX_UNIT_DIP, dp, getResources().getDisplayMetrics());
     }

@@ -23,6 +23,8 @@
         <attr name="android:text" />
         <attr name="android:textColor" />
         <attr name="android:textSize" />
+        <attr name="toggleTextColor" format="reference" />
+        <attr name="togglebackground" format="reference" />
         <attr name="tbgMarkerColor" format="color" />
         <attr name="tbgRadioStyle" format="boolean" />
     </declare-styleable>

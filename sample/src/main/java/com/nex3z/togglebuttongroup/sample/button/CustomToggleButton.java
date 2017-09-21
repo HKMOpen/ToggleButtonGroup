@@ -4,8 +4,8 @@ import android.content.Context;
 import android.support.v7.widget.AppCompatButton;
 import android.util.AttributeSet;
 
-import com.nex3z.togglebuttongroup.button.OnCheckedChangeListener;
-import com.nex3z.togglebuttongroup.button.ToggleButton;
+import com.nex3z.togglebuttongroup.models.OnCheckedChangeListener;
+import com.nex3z.togglebuttongroup.models.ToggleButton;
 
 public class CustomToggleButton extends AppCompatButton implements ToggleButton {
     private static final int[] CHECKED_STATE_SET = { android.R.attr.state_checked };

@@ -4,12 +4,15 @@
 
 A container of toggle buttons, supports multiple / single selection and button customization.
 
+ -[x] fixed color display list
+ -[x] support image icon
+ -[x] support label text with custom background color
 
 ## Gradle
 
 ```
 dependencies {
-    compile 'com.nex3z:toggle-button-group:1.0.2'
+    compile 'com.hkm.ui:toggle-button-group:0.3.2'
 }
 ```
 

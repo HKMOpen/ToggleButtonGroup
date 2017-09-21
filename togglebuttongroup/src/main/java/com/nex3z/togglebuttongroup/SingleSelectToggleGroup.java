@@ -5,7 +5,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.Checkable;
 
-import com.nex3z.togglebuttongroup.button.MarkerButton;
+import com.nex3z.togglebuttongroup.models.MarkerButton;
 
 public class SingleSelectToggleGroup extends ToggleButtonGroup {
     private static final String LOG_TAG = SingleSelectToggleGroup.class.getSimpleName();

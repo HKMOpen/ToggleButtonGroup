@@ -5,7 +5,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.Checkable;
 
-import com.nex3z.togglebuttongroup.button.ToggleButton;
+import com.nex3z.togglebuttongroup.models.ToggleButton;
 
 import java.util.LinkedHashSet;
 import java.util.Set;

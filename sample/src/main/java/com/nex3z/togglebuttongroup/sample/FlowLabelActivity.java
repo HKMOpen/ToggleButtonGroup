@@ -6,7 +6,7 @@ import android.util.Log;
 
 import com.nex3z.togglebuttongroup.MultiSelectToggleGroup;
 import com.nex3z.togglebuttongroup.SingleSelectToggleGroup;
-import com.nex3z.togglebuttongroup.button.LabelToggle;
+import com.nex3z.togglebuttongroup.widgets.LabelRoundedToggle;
 
 public class FlowLabelActivity extends AppCompatActivity {
     private static final String LOG_TAG = FlowLabelActivity.class.getSimpleName();
@@ -30,7 +30,7 @@ public class FlowLabelActivity extends AppCompatActivity {
         MultiSelectToggleGroup multiDummy = (MultiSelectToggleGroup) findViewById(R.id.group_dummy);
         String[] dummyText = getResources().getStringArray(R.array.dummy_text);
         for (String text : dummyText) {
-            LabelToggle toggle = new LabelToggle(this);
+            LabelRoundedToggle toggle = new LabelRoundedToggle(this);
             toggle.setText(text);
             multiDummy.addView(toggle);
         }

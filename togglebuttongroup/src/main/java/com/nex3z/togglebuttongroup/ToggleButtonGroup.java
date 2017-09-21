@@ -9,8 +9,8 @@ import android.view.ViewGroup;
 import android.widget.Checkable;
 import android.widget.CompoundButton;
 
-import com.nex3z.togglebuttongroup.button.OnCheckedChangeListener;
-import com.nex3z.togglebuttongroup.button.ToggleButton;
+import com.nex3z.togglebuttongroup.models.OnCheckedChangeListener;
+import com.nex3z.togglebuttongroup.models.ToggleButton;
 
 public abstract class ToggleButtonGroup extends FlowLayout {
     private static final String LOG_TAG = ToggleButtonGroup.class.getSimpleName();

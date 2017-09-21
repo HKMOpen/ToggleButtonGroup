@@ -10,7 +10,7 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.widget.ImageView;
 
-import com.nex3z.togglebuttongroup.button.CompoundToggleButton;
+import com.nex3z.togglebuttongroup.models.CompoundToggleButton;
 import com.nex3z.togglebuttongroup.sample.R;
 
 public class CustomCompoundToggleButton extends CompoundToggleButton {
@@ -47,11 +47,9 @@ public class CustomCompoundToggleButton extends CompoundToggleButton {
         }
 
         CheckedAnimationListener animationListener = new CheckedAnimationListener();
-        mFlipOut = (AnimatorSet) AnimatorInflater.loadAnimator(getContext(),
-                R.animator.flip_out);
+        mFlipOut = (AnimatorSet) AnimatorInflater.loadAnimator(getContext(), R.animator.flip_out);
         mFlipOut.addListener(animationListener);
-        mFlipIn = (AnimatorSet) AnimatorInflater.loadAnimator(getContext(),
-                R.animator.flip_in);
+        mFlipIn = (AnimatorSet) AnimatorInflater.loadAnimator(getContext(), R.animator.flip_in);
         mFlipIn.addListener(animationListener);
     }
 

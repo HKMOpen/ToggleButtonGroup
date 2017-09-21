@@ -1,4 +1,4 @@
-package com.nex3z.togglebuttongroup.preset;
+package com.nex3z.togglebuttongroup.widgets;
 
 import android.animation.ArgbEvaluator;
 import android.animation.ValueAnimator;
@@ -10,7 +10,7 @@ import android.view.animation.Animation;
 import android.view.animation.ScaleAnimation;
 
 import com.nex3z.togglebuttongroup.R;
-import com.nex3z.togglebuttongroup.button.MarkerButton;
+import com.nex3z.togglebuttongroup.models.MarkerButton;
 
 public class CircularToggle extends MarkerButton {
     private static final String LOG_TAG = CircularToggle.class.getSimpleName();
@@ -37,11 +37,9 @@ public class CircularToggle extends MarkerButton {
     }
 
     private void initBackground() {
-        GradientDrawable checked = (GradientDrawable) ContextCompat.getDrawable(
-                getContext(), R.drawable.bg_circle);
+        GradientDrawable checked = (GradientDrawable) ContextCompat.getDrawable(getContext(), R.drawable.bg_circle);
         checked.setColor(mMarkerColor);
         mIvBg.setImageDrawable(checked);
-
         mTvText.setBackgroundDrawable(null);
     }
 

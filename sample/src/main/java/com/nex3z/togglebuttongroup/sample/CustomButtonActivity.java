@@ -13,7 +13,7 @@ public class CustomButtonActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_custom_button);
+        setContentView(R.layout.activity_tests_sample_collection);
         init();
     }
 
