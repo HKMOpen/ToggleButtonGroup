@@ -28,8 +28,17 @@ public abstract class CompoundToggleButton extends FrameLayout implements Toggle
 
     @Override
     public boolean performClick() {
-        toggle();
-        return super.performClick();
+        if (mOnCheckedWidgetListener.canCheck(this, getId())) {
+            toggle();
+            return super.performClick();
+        } else {
+            if (isChecked()) {
+                toggle();
+                return super.performClick();
+            } else {
+                return false;
+            }
+        }
     }
 
     @Override
@@ -37,7 +46,8 @@ public abstract class CompoundToggleButton extends FrameLayout implements Toggle
         mOnCheckedWidgetListener = listener;
     }
 
-    @Override @CallSuper
+    @Override
+    @CallSuper
     public void setChecked(boolean checked) {
         if (mChecked != checked) {
             mChecked = checked;
@@ -58,7 +68,8 @@ public abstract class CompoundToggleButton extends FrameLayout implements Toggle
         return mChecked;
     }
 
-    @Override @CallSuper
+    @Override
+    @CallSuper
     public void toggle() {
         setChecked(!mChecked);
     }

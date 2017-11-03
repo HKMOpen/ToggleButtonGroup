@@ -71,14 +71,23 @@ public abstract class ToggleButtonGroup extends FlowLayout {
         public <T extends View & Checkable> void onCheckedChanged(T view, boolean isChecked) {
             onChildCheckedChange(view, isChecked);
         }
+
+        @Override
+        public <T extends View & Checkable> boolean canCheck(T view, int item_id_sp) {
+            return canNowCheck(view, item_id_sp);
+        }
     }
 
-    private class CompoundButtonCheckedStateTracker implements
-            CompoundButton.OnCheckedChangeListener {
+    protected <T extends View & Checkable> boolean canNowCheck(T view, int id_special) {
+        return true;
+    }
+
+    private class CompoundButtonCheckedStateTracker implements CompoundButton.OnCheckedChangeListener {
         @Override
         public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
             onChildCheckedChange(buttonView, isChecked);
         }
+
     }
 
 

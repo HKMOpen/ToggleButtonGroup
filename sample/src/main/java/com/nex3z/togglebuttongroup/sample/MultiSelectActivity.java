@@ -24,5 +24,6 @@ public class MultiSelectActivity extends AppCompatActivity {
                 Log.v(LOG_TAG, "onCheckedStateChanged(): group.getCheckedIds() = " + group.getCheckedIds());
             }
         });
+        multi.setMaxItems(2);
     }
 }

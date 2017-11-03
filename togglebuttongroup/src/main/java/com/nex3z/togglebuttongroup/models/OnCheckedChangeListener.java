@@ -7,4 +7,5 @@ public interface OnCheckedChangeListener {
 
     <T extends View & Checkable> void onCheckedChanged(T view, boolean isChecked);
 
+    <T extends View & Checkable> boolean canCheck(T view, int special_id);
 }
