@@ -12,7 +12,7 @@ A container of toggle buttons, supports multiple / single selection and button c
 
 ```
 dependencies {
-    compile 'com.hkm.ui:toggle-button-group:0.3.2'
+    compile 'com.hkm.ui:toggle-button-group:0.4.0'
 }
 ```
 
