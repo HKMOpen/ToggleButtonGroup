@@ -168,3 +168,8 @@ For more detail, please check the [sample].
 [CustomCompoundToggleButton]: https://github.com/nex3z/ToggleButtonGroup/blob/master/sample/src/main/java/com/nex3z/togglebuttongroup/sample/button/CustomCompoundToggleButton.java
 [Checkable]: https://developer.android.com/reference/android/widget/Checkable.html
 [sample]: https://github.com/nex3z/ToggleButtonGroup/tree/master/sample/src/main/java/com/nex3z/togglebuttongroup/sample
+
+
+
+### Thank you for your support and we will bring more amazing libraries to your productive works. We are accepting bitcoin by the address as below. Please scan the QR code to start
+![wallet](http://s32.postimg.org/sdd1oio1t/qrwallet.jpg)
