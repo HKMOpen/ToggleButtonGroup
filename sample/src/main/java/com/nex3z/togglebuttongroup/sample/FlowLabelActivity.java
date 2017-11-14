@@ -33,14 +33,14 @@ public class FlowLabelActivity extends AppCompatActivity {
         for (String text : dummyText) {
             LabelRoundedToggle toggle = new LabelRoundedToggle(this);
             toggle.setText(text);
-           // multiDummy.addView(toggle);
+            multiDummy.addView(toggle);
         }
 
 
         for (String text : dummyText) {
             LabelRoundedToggle toggle = new LabelRoundedToggle(this);
             toggle.setText(text);
-           // dummy_2.addView(toggle);
+            dummy_2.addView(toggle);
         }
 
     }

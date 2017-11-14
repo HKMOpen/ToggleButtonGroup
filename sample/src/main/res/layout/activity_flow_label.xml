@@ -97,6 +97,9 @@
         android:id="@+id/group_dummy_iwifjo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"></com.nex3z.togglebuttongroup.MultiSelectToggleGroup>
+        android:layout_marginTop="16dp"
+        app:alignContent="stretch"
+        app:alignItems="stretch"
+        app:flexWrap="wrap" />
 
 </LinearLayout>
