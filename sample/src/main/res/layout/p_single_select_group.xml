@@ -17,8 +17,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/label_msdasggg"
-        android:padding="8dp"
-        app:tbgChildSpacing="8dp">
+        android:padding="8dp">
+        <!--
+           <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+                android:id="@+id/group_single_radiobutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/label_msdasggg"
+                android:padding="8dp"
+                app:tbgChildSpacing="8dp">
+        -->
 
         <RadioButton
             android:layout_width="@dimen/mv_extra_detail_desc"

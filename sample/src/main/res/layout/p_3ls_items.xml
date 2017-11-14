@@ -17,8 +17,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/gre43"
+        android:padding="8dp"><!--
+    <com.nex3z.togglebuttongroup.MultiSelectToggleGroup
+        android:id="@+id/group_multi_custom_togglebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gre43"
         android:padding="8dp"
         app:tbgChildSpacing="auto">
+-->
 
         <com.nex3z.togglebuttongroup.sample.button.CustomToggleButton
             android:layout_width="wrap_content"

@@ -27,12 +27,21 @@ public class FlowLabelActivity extends AppCompatActivity {
             }
         });
 
+        MultiSelectToggleGroup dummy_2 = (MultiSelectToggleGroup) findViewById(R.id.group_dummy_iwifjo);
         MultiSelectToggleGroup multiDummy = (MultiSelectToggleGroup) findViewById(R.id.group_dummy);
         String[] dummyText = getResources().getStringArray(R.array.dummy_text);
         for (String text : dummyText) {
             LabelRoundedToggle toggle = new LabelRoundedToggle(this);
             toggle.setText(text);
-            multiDummy.addView(toggle);
+           // multiDummy.addView(toggle);
         }
+
+
+        for (String text : dummyText) {
+            LabelRoundedToggle toggle = new LabelRoundedToggle(this);
+            toggle.setText(text);
+           // dummy_2.addView(toggle);
+        }
+
     }
 }

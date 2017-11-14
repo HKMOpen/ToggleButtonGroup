@@ -118,7 +118,6 @@ public abstract class Label extends MarkerButton implements ToggleButton {
 
     @Override
     public void setChecked(boolean checked) {
-
         super.setChecked(checked);
         if (use_animation) {
             if (checked) {

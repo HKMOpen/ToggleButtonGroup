@@ -24,6 +24,8 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation libden.appCompat
+    implementation libden.recycler
+    implementation libden.flexbox
 }
 
 
