@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="FlowLayout">
+  <!--  <declare-styleable name="FlowLayout">
         <attr name="tbgFlow" format="boolean" />
         <attr name="tbgChildSpacing" format="enum|dimension">
             <enum name="auto" value="-65536" />
         </attr>
+
+        <attr name="tbgFLowStyle" format="enum">
+            <enum name="flow" value="0" />
+            <enum name="grid_col_2" value="1" />
+            <enum name="grid_col_3" value="2" />
+            <enum name="grid_col_4" value="3" />
+            <enum name="grid_col_5" value="4" />
+        </attr>
+
         <attr name="tbgChildSpacingForLastRow" format="enum|dimension">
             <enum name="auto" value="-65536" />
             <enum name="align" value="-65537" />
@@ -13,7 +22,7 @@
             <enum name="auto" value="-65536" />
         </attr>
         <attr name="tbgRtl" format="boolean" />
-    </declare-styleable>
+    </declare-styleable>-->
 
     <declare-styleable name="ToggleButtonGroup">
         <attr name="tbgCheckedButton" format="reference" />

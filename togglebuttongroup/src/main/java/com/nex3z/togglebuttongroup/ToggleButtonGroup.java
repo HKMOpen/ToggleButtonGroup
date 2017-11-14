@@ -9,10 +9,11 @@ import android.view.ViewGroup;
 import android.widget.Checkable;
 import android.widget.CompoundButton;
 
+import com.google.android.flexbox.FlexboxLayout;
 import com.nex3z.togglebuttongroup.models.OnCheckedChangeListener;
 import com.nex3z.togglebuttongroup.models.ToggleButton;
 
-public abstract class ToggleButtonGroup extends FlowLayout {
+public abstract class ToggleButtonGroup extends FlexboxLayout {
     private static final String LOG_TAG = ToggleButtonGroup.class.getSimpleName();
 
     protected int mInitialCheckedId = View.NO_ID;

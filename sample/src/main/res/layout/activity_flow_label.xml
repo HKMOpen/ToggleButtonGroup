@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -13,51 +12,45 @@
         android:id="@+id/group_weekdays"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:tbgChildSpacing="auto"
-        app:tbgChildSpacingForLastRow="align"
-        app:tbgRowSpacing="8dp">
+        app:alignContent="flex_start"
+        app:alignItems="flex_start"
+        app:flexWrap="wrap"
+        app:justifyContent="space_around">
 
         <com.nex3z.togglebuttongroup.widgets.LabelRoundedToggle
             android:id="@+id/lb_sun"
-            android:layout_width="65dp"
-            android:layout_height="wrap_content"
-            android:text="SUN"/>
+            style="@style/flexbox_2col"
+            android:text="SUN" />
 
         <com.nex3z.togglebuttongroup.widgets.LabelRoundedToggle
             android:id="@+id/lb_mon"
-            android:layout_width="65dp"
-            android:layout_height="wrap_content"
-            android:text="MON"/>
+            style="@style/flexbox_2col"
+            android:text="MON" />
 
         <com.nex3z.togglebuttongroup.widgets.LabelRoundedToggle
             android:id="@+id/lb_tue"
-            android:layout_width="65dp"
-            android:layout_height="wrap_content"
-            android:text="TUE"/>
+            style="@style/flexbox_2col"
+            android:text="TUE" />
 
         <com.nex3z.togglebuttongroup.widgets.LabelRoundedToggle
             android:id="@+id/lb_wed"
-            android:layout_width="65dp"
-            android:layout_height="wrap_content"
-            android:text="WED"/>
+            style="@style/flexbox_2col"
+            android:text="WED" />
 
         <com.nex3z.togglebuttongroup.widgets.LabelRoundedToggle
             android:id="@+id/lb_thu"
-            android:layout_width="65dp"
-            android:layout_height="wrap_content"
-            android:text="THU"/>
+            style="@style/flexbox_2col"
+            android:text="THU" />
 
         <com.nex3z.togglebuttongroup.widgets.LabelRoundedToggle
             android:id="@+id/lb_fri"
-            android:layout_width="65dp"
-            android:layout_height="wrap_content"
-            android:text="FRI"/>
+            style="@style/flexbox_2col"
+            android:text="FRI" />
 
         <com.nex3z.togglebuttongroup.widgets.LabelRoundedToggle
             android:id="@+id/lb_sat"
-            android:layout_width="65dp"
-            android:layout_height="wrap_content"
-            android:text="SAT"/>
+            style="@style/flexbox_2col"
+            android:text="SAT" />
 
     </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
 
@@ -66,10 +59,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        app:tbgChildSpacing="auto"
-        app:tbgChildSpacingForLastRow="align"
-        app:tbgRowSpacing="8dp">
+        app:alignContent="stretch"
+        app:alignItems="stretch"
+        app:flexWrap="wrap"
+        app:justifyContent="space_around">
 
     </com.nex3z.togglebuttongroup.MultiSelectToggleGroup>
+
+
+    <com.nex3z.togglebuttongroup.MultiSelectToggleGroup
+        android:id="@+id/group_dummy_iwifjo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:alignContent="flex_start"
+        app:alignItems="flex_start"
+        app:flexWrap="wrap"
+        app:justifyContent="flex_start"
+        app:layout_flexBasisPercent="50%" />
 
 </LinearLayout>

@@ -16,16 +16,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/label_msggg"
-        android:padding="8dp"
-        app:tbgChildSpacing="auto">
+        android:padding="8dp">
+        <!--   <com.nex3z.togglebuttongroup.MultiSelectToggleGroup
+               android:id="@+id/group_multi_custom_compoundbutton"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/label_msggg"
+               android:padding="8dp"
+               app:tbgChildSpacing="auto">-->
 
         <com.nex3z.togglebuttongroup.widgets.SimpleLabel
             android:layout_width="@dimen/mv_extra_detail_desc"
             android:layout_height="60dp"
             android:gravity="center"
             android:text="SimpleLabel"
-            app:toggleTextColor="@color/selector_emp"
             app:tbgMarkerColor="@color/colorAccent"
+            app:toggleTextColor="@color/selector_emp"
             app:togglebackground="@drawable/selector_bg_radio_button" />
 
         <com.nex3z.togglebuttongroup.sample.button.CustomCompoundButton

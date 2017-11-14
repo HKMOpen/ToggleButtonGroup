@@ -18,7 +18,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/label309293"
-        app:tbgChildSpacing="auto">
+
+        >
+        <!--
+            <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+                android:id="@+id/group_single_custom_compoundtogglebutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/label309293"
+                app:tbgChildSpacing="auto">
+        -->
 
         <com.nex3z.togglebuttongroup.sample.button.CustomCompoundToggleButton
             android:layout_width="80dp"

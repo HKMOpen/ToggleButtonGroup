@@ -3,6 +3,7 @@ package com.nex3z.togglebuttongroup.sample;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.ContextThemeWrapper;
 
 import com.nex3z.togglebuttongroup.MultiSelectToggleGroup;
 import com.nex3z.togglebuttongroup.SingleSelectToggleGroup;
@@ -27,12 +28,23 @@ public class FlowLabelActivity extends AppCompatActivity {
             }
         });
 
+        MultiSelectToggleGroup dummy_2 = (MultiSelectToggleGroup) findViewById(R.id.group_dummy_iwifjo);
         MultiSelectToggleGroup multiDummy = (MultiSelectToggleGroup) findViewById(R.id.group_dummy);
         String[] dummyText = getResources().getStringArray(R.array.dummy_text);
+        //  ContextThemeWrapper wrappertheme = new ContextThemeWrapper(this, R.style.flexbox_2col);
+
         for (String text : dummyText) {
-            LabelRoundedToggle toggle = new LabelRoundedToggle(this);
+            LabelRoundedToggle toggle = new LabelRoundedToggle(this, null, R.style.flexbox_2col);
             toggle.setText(text);
             multiDummy.addView(toggle);
         }
+
+
+        for (String text : dummyText) {
+            LabelRoundedToggle toggle = new LabelRoundedToggle(this);
+            toggle.setText(text);
+            dummy_2.addView(toggle);
+        }
+
     }
 }

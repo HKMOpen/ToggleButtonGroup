@@ -9,7 +9,7 @@ android {
         targetSdkVersion project.ANDROID_BUILD_TARGET_SDK_VERSION
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+       // testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         applicationId "com.nex3z.togglebuttongroup.sample"
     }
 
@@ -24,10 +24,6 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    //  androidTestimplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
-    //      exclude group: 'com.android.support', module: 'support-annotations'
-    //  })
-    implementation project(path: ':togglebuttongroup')
     implementation libden.appCompat
-    // testCompile 'junit:junit:4.12'
+    implementation project(':togglebuttongroup')
 }

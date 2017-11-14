@@ -18,8 +18,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/l554"
+        android:padding="8dp"> <!--   <com.nex3z.togglebuttongroup.MultiSelectToggleGroup
+        android:id="@+id/group_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l554"
         android:padding="8dp"
-        app:tbgChildSpacing="auto">
+        app:tbgChildSpacing="auto"
+        app:tbgRowSpacing="5dp">-->
 
         <com.nex3z.togglebuttongroup.widgets.ImageToggle
             android:layout_width="@dimen/mv_extra_detail_desc"
@@ -59,8 +65,6 @@
             android:background="@drawable/ic_thumb_up_black_24dp"
             android:gravity="center"
             android:src="@drawable/selector_bg_radio_button" />
-
-
 
 
     </com.nex3z.togglebuttongroup.MultiSelectToggleGroup>
