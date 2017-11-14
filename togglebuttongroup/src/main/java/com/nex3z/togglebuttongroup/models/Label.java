@@ -27,6 +27,12 @@ public abstract class Label extends MarkerButton implements ToggleButton {
         this(context, null);
     }
 
+    public Label(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+        init(context, attrs);
+        init();
+    }
+
     public Label(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(context, attrs);

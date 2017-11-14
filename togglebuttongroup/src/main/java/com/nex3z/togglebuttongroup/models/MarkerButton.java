@@ -30,8 +30,17 @@ public abstract class MarkerButton extends CompoundToggleButton {
         this(context, null);
     }
 
+    public MarkerButton(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+        init(context, attrs);
+    }
+
     public MarkerButton(Context context, AttributeSet attrs) {
         super(context, attrs);
+        init(context, attrs);
+    }
+
+    private void init(Context context, AttributeSet attrs) {
 
         LayoutInflater inflater = (LayoutInflater) context
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);

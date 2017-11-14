@@ -10,7 +10,7 @@
     </style>
 
     <declare-styleable name="CustomCompoundButtonTheme">
-        <attr name="customCompoundButtonStyle" format="reference"/>
+        <attr name="customCompoundButtonStyle" format="reference" />
     </declare-styleable>
 
     <style name="CustomCompoundButton" parent="@android:style/Widget.CompoundButton.RadioButton">
@@ -19,5 +19,6 @@
         <item name="android:textColor">@color/selector_text_radio_button</item>
         <item name="android:button">@null</item>
     </style>
+
 
 </resources>

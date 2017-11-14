@@ -21,6 +21,11 @@ public class LabelRoundedToggle extends Label {
         this(context, null);
     }
 
+    public LabelRoundedToggle(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+        init();
+    }
+
     public LabelRoundedToggle(Context context, AttributeSet attrs) {
         super(context, attrs);
         init();
