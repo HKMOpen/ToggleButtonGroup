@@ -1,18 +1,18 @@
 # ToggleButtonGroup
 
-[![API](https://img.shields.io/badge/API-15%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=15) [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-ToggleButtonGroup-blue.svg?style=flat)](https://android-arsenal.com/details/1/4885) [ ![Download](https://api.bintray.com/packages/jjhesk/maven/toggle-button-group/images/download.svg) ](https://bintray.com/jjhesk/maven/toggle-button-group/_latestVersion)
+[![API](https://img.shields.io/badge/API-15%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=15) [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-ToggleButtonGroup-blue.svg?style=flat)](https://android-arsenal.com/details/1/4885)[![Download](https://api.bintray.com/packages/jjhesk/maven/toggle-button-group/images/download.svg)](https://bintray.com/jjhesk/maven/toggle-button-group/_latestVersion)
 
 A container of toggle buttons, supports multiple / single selection and button customization.
 
- -[x] fixed color display list
- -[x] support image icon
- -[x] support label text with custom background color
-
+ - [x] fixed color display list
+ - [x] support image icon
+ - [x] support label text with custom background color
+ - [x] enjoy all the attributes and its layout management from [`flexbox-layout`][flexboxlayout]
 ## Gradle
 
 ```
 dependencies {
-    compile 'com.hkm.ui:toggle-button-group:0.4.0'
+    implementation 'com.hkm.ui:toggle-button-group:0.5.0'
 }
 ```
 
@@ -29,8 +29,7 @@ You can create a group of single-select toggle buttons with `SingleSelectToggleG
 <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
     android:id="@+id/group_choices"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    app:tbgCheckedButton="@+id/choice_a">
+    android:layout_height="wrap_content">
 
     <com.nex3z.togglebuttongroup.preset.CircularToggle
         android:id="@+id/choice_a"
@@ -62,8 +61,7 @@ You can create a group of multi-select toggle buttons with `MultiSelectToggleGro
 <com.nex3z.togglebuttongroup.MultiSelectToggleGroup
     android:id="@+id/group_weekdays"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    app:tbgChildSpacing="auto">
+    android:layout_height="wrap_content">
 
     <com.nex3z.togglebuttongroup.preset.CircularToggle
         android:id="@+id/sun"
@@ -94,11 +92,7 @@ You can create a group of multi-select toggle buttons with `MultiSelectToggleGro
     android:id="@+id/group_dummy"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="16dp"
-    app:tbgFlow="true"
-    app:tbgChildSpacing="auto"
-    app:tbgChildSpacingForLastRow="align"
-    app:tbgRowSpacing="8dp">
+    android:layout_marginTop="16dp">
 
     <!--...-->
 
@@ -168,6 +162,7 @@ For more detail, please check the [sample].
 [CustomCompoundToggleButton]: https://github.com/nex3z/ToggleButtonGroup/blob/master/sample/src/main/java/com/nex3z/togglebuttongroup/sample/button/CustomCompoundToggleButton.java
 [Checkable]: https://developer.android.com/reference/android/widget/Checkable.html
 [sample]: https://github.com/nex3z/ToggleButtonGroup/tree/master/sample/src/main/java/com/nex3z/togglebuttongroup/sample
+[flexboxlayout]: https://github.com/google/flexbox-layout
 
 
 
