@@ -6,6 +6,7 @@ import android.util.Log;
 
 import com.nex3z.togglebuttongroup.MultiSelectToggleGroup;
 import com.nex3z.togglebuttongroup.SingleSelectToggleGroup;
+import com.nex3z.togglebuttongroup.models.OnCheckedStateChangeListener;
 
 public class CustomButtonActivity extends AppCompatActivity {
     private static final String LOG_TAG = CustomButtonActivity.class.getSimpleName();
@@ -46,7 +47,7 @@ public class CustomButtonActivity extends AppCompatActivity {
         }
     }
 
-    private static class MultiSelectListener implements MultiSelectToggleGroup.OnCheckedStateChangeListener {
+    private static class MultiSelectListener implements OnCheckedStateChangeListener {
         @Override
         public void onCheckedStateChanged(MultiSelectToggleGroup group, int checkedId, boolean isChecked) {
             Log.v(LOG_TAG, "onCheckedStateChanged(): " + checkedId + ", isChecked = " + isChecked);

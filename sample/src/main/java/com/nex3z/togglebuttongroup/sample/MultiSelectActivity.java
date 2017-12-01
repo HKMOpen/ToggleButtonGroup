@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
 import com.nex3z.togglebuttongroup.MultiSelectToggleGroup;
+import com.nex3z.togglebuttongroup.models.OnCheckedStateChangeListener;
 
 public class MultiSelectActivity extends AppCompatActivity {
     private static final String LOG_TAG = MultiSelectActivity.class.getSimpleName();
@@ -18,7 +19,7 @@ public class MultiSelectActivity extends AppCompatActivity {
 
     private void init() {
         MultiSelectToggleGroup multi = (MultiSelectToggleGroup) findViewById(R.id.group_weekdays);
-        multi.setOnCheckedChangeListener(new MultiSelectToggleGroup.OnCheckedStateChangeListener() {
+        multi.setOnCheckedChangeListener(new OnCheckedStateChangeListener() {
             @Override
             public void onCheckedStateChanged(MultiSelectToggleGroup group, int checkedId, boolean isChecked) {
                 Log.v(LOG_TAG, "onCheckedStateChanged(): group.getCheckedIds() = " + group.getCheckedIds());

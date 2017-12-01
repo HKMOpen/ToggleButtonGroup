@@ -8,11 +8,12 @@ A container of toggle buttons, supports multiple / single selection and button c
  - [x] support image icon
  - [x] support label text with custom background color
  - [x] enjoy all the attributes and its layout management from [`flexbox-layout`][flexboxlayout]
+ - [x] before check listener for extensive logic
 ## Gradle
 
 ```
 dependencies {
-    implementation 'com.hkm.ui:toggle-button-group:0.5.0'
+    implementation 'com.hkm.ui:toggle-button-group:0.5.2'
 }
 ```
 
