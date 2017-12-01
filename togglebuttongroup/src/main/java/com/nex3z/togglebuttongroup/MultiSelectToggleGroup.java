@@ -5,6 +5,8 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.Checkable;
 
+import com.nex3z.togglebuttongroup.models.OnBeforeOnCheckChange;
+import com.nex3z.togglebuttongroup.models.OnCheckedStateChangeListener;
 import com.nex3z.togglebuttongroup.models.ToggleButton;
 
 import java.util.LinkedHashSet;
@@ -14,6 +16,7 @@ public class MultiSelectToggleGroup extends ToggleButtonGroup {
     private static final String LOG_TAG = MultiSelectToggleGroup.class.getSimpleName();
     private int max_count = -1;
     private OnCheckedStateChangeListener mOnCheckedStateChangeListener;
+    private OnBeforeOnCheckChange mBeforeCheckListener;
 
     public MultiSelectToggleGroup(Context context) {
         super(context);
@@ -92,6 +95,10 @@ public class MultiSelectToggleGroup extends ToggleButtonGroup {
         mOnCheckedStateChangeListener = listener;
     }
 
+    public void setOnBeforeCheckChangeListener(OnBeforeOnCheckChange listener) {
+        mBeforeCheckListener = listener;
+    }
+
     private void notifyCheckedStateChange(int id, boolean isChecked) {
         if (mOnCheckedStateChangeListener != null) {
             mOnCheckedStateChangeListener.onCheckedStateChanged(this, id, isChecked);
@@ -101,14 +108,16 @@ public class MultiSelectToggleGroup extends ToggleButtonGroup {
     @Override
     protected <T extends View & Checkable> boolean canNowCheck(T view, int id_special) {
         if (max_count > -1) {
-            return getCheckedCount() < max_count;
+            if (mBeforeCheckListener != null) {
+                boolean A = mBeforeCheckListener.beforeCheck(this, id_special);
+                boolean B = getCheckedCount() < max_count;
+                return A && B;
+            } else {
+                return getCheckedCount() < max_count;
+            }
         } else {
             return super.canNowCheck(view, id_special);
         }
-    }
-
-    public interface OnCheckedStateChangeListener {
-        void onCheckedStateChanged(MultiSelectToggleGroup group, int checkedId, boolean isChecked);
     }
 
     public void setMaxItems(int count) {
